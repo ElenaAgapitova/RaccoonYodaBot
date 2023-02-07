@@ -3,7 +3,7 @@ from aiogram import types
 from keyboards import candy_grab_candy, yes_no_kb, change_total_candy_kb
 
 
-@dp.message(commands='start')
+@dp.message(Command(commands=['start', 'старт']))
 async def start(message: types.Message):
     await message.answer('Да да, я тут.')
 

@@ -1,5 +1,5 @@
 from handlers import dp
-from aiogram import executor
+from create_bot import bot_start
 
 
 async def on_start(_):
@@ -7,4 +7,4 @@ async def on_start(_):
 
 
 if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates=True, on_startup=on_start)
+    bot_start()
